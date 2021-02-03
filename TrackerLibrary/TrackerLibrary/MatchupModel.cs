@@ -1,4 +1,6 @@
-﻿namespace TrackerLibrary
+﻿using System.Collections.Generic;
+
+namespace TrackerLibrary
 {
     public class MatchupModel
     {
