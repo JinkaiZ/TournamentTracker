@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrackerLibrary;
+using TrackerLibrary.DataAccess;
+using TrackerLibrary.Models;
 
 namespace TrackerUI
 {
@@ -33,6 +35,7 @@ namespace TrackerUI
             if (ValidateForm())
             {
                 PrizeModel model = new PrizeModel(
+                   
                     placeNameValue.Text,
                     placeNumberValue.Text,
                     prizeAmountValue.Text,
@@ -43,6 +46,7 @@ namespace TrackerUI
                     db.CreatePrize(model);
                 }
 
+           
                 placeNameValue.Text = "";
                 placeNumberValue.Text = "";
                 prizeAmountValue.Text = "0";
@@ -59,7 +63,7 @@ namespace TrackerUI
             bool output = true;
             int placeNumber = 0;
 
-            if (!(int.TryParse(placeNameValue.Text, out placeNumber)))
+            if (!(int.TryParse(placeNumberValue.Text, out placeNumber)))
             {
                 output = false;
             }
