@@ -168,6 +168,8 @@ namespace TrackerUI
             callingForm.TeamComplete(t);
             this.Close();
         }
+
+       
     }
 }
 
