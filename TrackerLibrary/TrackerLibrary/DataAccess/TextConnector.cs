@@ -129,7 +129,12 @@ namespace TrackerLibrary.DataAccess
 
         public List<TournamentModel> GetTournament_All()
         {
-            throw new NotImplementedException();
+            return TournamentFile.FullFilePath().LoadFile().ConvertToTournamentModels(TeamFile, PeopleFile, PrizesFile);
+        }
+
+        public void UpdateMatchup(MatchupModel model)
+        {
+            model.UpdateMatchupToFile();
         }
     }
 }

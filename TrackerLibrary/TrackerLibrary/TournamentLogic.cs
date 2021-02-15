@@ -61,16 +61,16 @@ namespace TrackerLibrary
         private static List<MatchupModel> CreateFirstRound(int byes, List<TeamModel> teams)
         {
             List<MatchupModel> output = new List<MatchupModel>();
-            MatchupModel current = new MatchupModel();
+            MatchupModel curr = new MatchupModel();
 
             foreach (TeamModel team in teams)
             {
-                current.Entries.Add(new MatchupEntryModel { TeamCompeting = team });
-                if(byes > 0 || current.Entries.Count > 1)
+                curr.Entries.Add(new MatchupEntryModel { TeamCompeting = team });
+                if(byes > 0 || curr.Entries.Count > 1)
                 {
-                    current.MatchupRound = 1;
-                    output.Add(current);
-                    current = new MatchupModel();
+                    curr.MatchupRound = 1;
+                    output.Add(curr);
+                    curr = new MatchupModel();
 
                     if(byes > 0 )
                     {

@@ -43,7 +43,7 @@ namespace TrackerUI
             this.tournamentDashboardLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.tournamentDashboardLabel.Location = new System.Drawing.Point(28, 55);
             this.tournamentDashboardLabel.Name = "tournamentDashboardLabel";
-            this.tournamentDashboardLabel.Size = new System.Drawing.Size(307, 38);
+            this.tournamentDashboardLabel.Size = new System.Drawing.Size(240, 30);
             this.tournamentDashboardLabel.TabIndex = 12;
             this.tournamentDashboardLabel.Text = "Tournament Dashboard";
             // 
@@ -52,7 +52,7 @@ namespace TrackerUI
             this.loadExistingTorunamentDropDown.FormattingEnabled = true;
             this.loadExistingTorunamentDropDown.Location = new System.Drawing.Point(65, 208);
             this.loadExistingTorunamentDropDown.Name = "loadExistingTorunamentDropDown";
-            this.loadExistingTorunamentDropDown.Size = new System.Drawing.Size(304, 39);
+            this.loadExistingTorunamentDropDown.Size = new System.Drawing.Size(304, 33);
             this.loadExistingTorunamentDropDown.TabIndex = 20;
             // 
             // loadExistingTorunamentLabel
@@ -62,7 +62,7 @@ namespace TrackerUI
             this.loadExistingTorunamentLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.loadExistingTorunamentLabel.Location = new System.Drawing.Point(58, 156);
             this.loadExistingTorunamentLabel.Name = "loadExistingTorunamentLabel";
-            this.loadExistingTorunamentLabel.Size = new System.Drawing.Size(342, 38);
+            this.loadExistingTorunamentLabel.Size = new System.Drawing.Size(266, 30);
             this.loadExistingTorunamentLabel.TabIndex = 19;
             this.loadExistingTorunamentLabel.Text = "Load Existing Torunament ";
             // 
@@ -81,6 +81,7 @@ namespace TrackerUI
             this.loadTournamentButton.TabIndex = 21;
             this.loadTournamentButton.Text = "Load Torunament";
             this.loadTournamentButton.UseVisualStyleBackColor = true;
+            this.loadTournamentButton.Click += new System.EventHandler(this.loadTournamentButton_Click);
             // 
             // createTournamentButton
             // 
@@ -97,10 +98,11 @@ namespace TrackerUI
             this.createTournamentButton.TabIndex = 22;
             this.createTournamentButton.Text = "Create Tournament";
             this.createTournamentButton.UseVisualStyleBackColor = true;
+            this.createTournamentButton.Click += new System.EventHandler(this.createTournamentButton_Click);
             // 
             // TournamentDashboardForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(519, 511);
