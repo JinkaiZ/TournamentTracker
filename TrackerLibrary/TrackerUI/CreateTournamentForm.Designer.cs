@@ -51,17 +51,17 @@ namespace TrackerUI
             // TournamentViewerLabel
             // 
             this.TournamentViewerLabel.AutoSize = true;
-            this.TournamentViewerLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TournamentViewerLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TournamentViewerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.TournamentViewerLabel.Location = new System.Drawing.Point(32, 32);
+            this.TournamentViewerLabel.Location = new System.Drawing.Point(31, 27);
             this.TournamentViewerLabel.Name = "TournamentViewerLabel";
-            this.TournamentViewerLabel.Size = new System.Drawing.Size(199, 30);
+            this.TournamentViewerLabel.Size = new System.Drawing.Size(291, 45);
             this.TournamentViewerLabel.TabIndex = 1;
             this.TournamentViewerLabel.Text = "Create Tournament";
             // 
             // tournamentNameValue
             // 
-            this.tournamentNameValue.Location = new System.Drawing.Point(39, 178);
+            this.tournamentNameValue.Location = new System.Drawing.Point(37, 160);
             this.tournamentNameValue.Name = "tournamentNameValue";
             this.tournamentNameValue.Size = new System.Drawing.Size(304, 36);
             this.tournamentNameValue.TabIndex = 10;
@@ -72,17 +72,19 @@ namespace TrackerUI
             this.tournamentNameLabel.AutoSize = true;
             this.tournamentNameLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tournamentNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.tournamentNameLabel.Location = new System.Drawing.Point(32, 126);
+            this.tournamentNameLabel.Location = new System.Drawing.Point(32, 118);
             this.tournamentNameLabel.Name = "tournamentNameLabel";
             this.tournamentNameLabel.Size = new System.Drawing.Size(193, 30);
             this.tournamentNameLabel.TabIndex = 9;
             this.tournamentNameLabel.Text = "Tournament Name";
+            this.tournamentNameLabel.Click += new System.EventHandler(this.tournamentNameLabel_Click);
             // 
             // entryFeeValue
             // 
-            this.entryFeeValue.Location = new System.Drawing.Point(205, 266);
+            this.entryFeeValue.Font = new System.Drawing.Font("Segoe UI", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entryFeeValue.Location = new System.Drawing.Point(180, 239);
             this.entryFeeValue.Name = "entryFeeValue";
-            this.entryFeeValue.Size = new System.Drawing.Size(100, 36);
+            this.entryFeeValue.Size = new System.Drawing.Size(100, 38);
             this.entryFeeValue.TabIndex = 12;
             this.entryFeeValue.Text = "0";
             // 
@@ -91,11 +93,12 @@ namespace TrackerUI
             this.entryFeelabel.AutoSize = true;
             this.entryFeelabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entryFeelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.entryFeelabel.Location = new System.Drawing.Point(32, 266);
+            this.entryFeelabel.Location = new System.Drawing.Point(34, 239);
             this.entryFeelabel.Name = "entryFeelabel";
             this.entryFeelabel.Size = new System.Drawing.Size(103, 30);
             this.entryFeelabel.TabIndex = 11;
             this.entryFeelabel.Text = "Entry Fee";
+            this.entryFeelabel.Click += new System.EventHandler(this.entryFeelabel_Click);
             // 
             // selectTeamDropDown
             // 
@@ -116,12 +119,13 @@ namespace TrackerUI
             this.selectTeamLabel.Size = new System.Drawing.Size(129, 30);
             this.selectTeamLabel.TabIndex = 13;
             this.selectTeamLabel.Text = "Select Team";
+            this.selectTeamLabel.Click += new System.EventHandler(this.selectTeamLabel_Click);
             // 
             // createNewTeamlinkLabel
             // 
             this.createNewTeamlinkLabel.AutoSize = true;
             this.createNewTeamlinkLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createNewTeamlinkLabel.Location = new System.Drawing.Point(258, 342);
+            this.createNewTeamlinkLabel.Location = new System.Drawing.Point(245, 342);
             this.createNewTeamlinkLabel.Name = "createNewTeamlinkLabel";
             this.createNewTeamlinkLabel.Size = new System.Drawing.Size(127, 30);
             this.createNewTeamlinkLabel.TabIndex = 15;
@@ -138,7 +142,7 @@ namespace TrackerUI
             this.addTeamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addTeamButton.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addTeamButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.addTeamButton.Location = new System.Drawing.Point(39, 466);
+            this.addTeamButton.Location = new System.Drawing.Point(63, 466);
             this.addTeamButton.Name = "addTeamButton";
             this.addTeamButton.Size = new System.Drawing.Size(217, 58);
             this.addTeamButton.TabIndex = 16;
@@ -155,7 +159,7 @@ namespace TrackerUI
             this.createPrizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createPrizeButton.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createPrizeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.createPrizeButton.Location = new System.Drawing.Point(39, 553);
+            this.createPrizeButton.Location = new System.Drawing.Point(63, 559);
             this.createPrizeButton.Name = "createPrizeButton";
             this.createPrizeButton.Size = new System.Drawing.Size(217, 58);
             this.createPrizeButton.TabIndex = 17;
@@ -166,11 +170,12 @@ namespace TrackerUI
             // tournamentTeamsListBox
             // 
             this.tournamentTeamsListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tournamentTeamsListBox.Font = new System.Drawing.Font("Segoe UI", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tournamentTeamsListBox.FormattingEnabled = true;
-            this.tournamentTeamsListBox.ItemHeight = 30;
-            this.tournamentTeamsListBox.Location = new System.Drawing.Point(490, 77);
+            this.tournamentTeamsListBox.ItemHeight = 31;
+            this.tournamentTeamsListBox.Location = new System.Drawing.Point(441, 118);
             this.tournamentTeamsListBox.Name = "tournamentTeamsListBox";
-            this.tournamentTeamsListBox.Size = new System.Drawing.Size(367, 212);
+            this.tournamentTeamsListBox.Size = new System.Drawing.Size(367, 188);
             this.tournamentTeamsListBox.TabIndex = 18;
             this.tournamentTeamsListBox.SelectedIndexChanged += new System.EventHandler(this.matchupListBox_SelectedIndexChanged);
             // 
@@ -179,7 +184,7 @@ namespace TrackerUI
             this.tournamentPlayerLabel.AutoSize = true;
             this.tournamentPlayerLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tournamentPlayerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.tournamentPlayerLabel.Location = new System.Drawing.Point(483, 18);
+            this.tournamentPlayerLabel.Location = new System.Drawing.Point(436, 75);
             this.tournamentPlayerLabel.Name = "tournamentPlayerLabel";
             this.tournamentPlayerLabel.Size = new System.Drawing.Size(164, 30);
             this.tournamentPlayerLabel.TabIndex = 19;
@@ -194,9 +199,9 @@ namespace TrackerUI
             this.deleteSelectedPlayerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteSelectedPlayerButton.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteSelectedPlayerButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.deleteSelectedPlayerButton.Location = new System.Drawing.Point(923, 118);
+            this.deleteSelectedPlayerButton.Location = new System.Drawing.Point(835, 160);
             this.deleteSelectedPlayerButton.Name = "deleteSelectedPlayerButton";
-            this.deleteSelectedPlayerButton.Size = new System.Drawing.Size(152, 103);
+            this.deleteSelectedPlayerButton.Size = new System.Drawing.Size(152, 79);
             this.deleteSelectedPlayerButton.TabIndex = 20;
             this.deleteSelectedPlayerButton.Text = "Delete Selected";
             this.deleteSelectedPlayerButton.UseVisualStyleBackColor = true;
@@ -211,9 +216,9 @@ namespace TrackerUI
             this.deleteSelectedPrizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteSelectedPrizeButton.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteSelectedPrizeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.deleteSelectedPrizeButton.Location = new System.Drawing.Point(923, 444);
+            this.deleteSelectedPrizeButton.Location = new System.Drawing.Point(835, 455);
             this.deleteSelectedPrizeButton.Name = "deleteSelectedPrizeButton";
-            this.deleteSelectedPrizeButton.Size = new System.Drawing.Size(152, 103);
+            this.deleteSelectedPrizeButton.Size = new System.Drawing.Size(152, 80);
             this.deleteSelectedPrizeButton.TabIndex = 23;
             this.deleteSelectedPrizeButton.Text = "Delete Selected";
             this.deleteSelectedPrizeButton.UseVisualStyleBackColor = true;
@@ -224,7 +229,7 @@ namespace TrackerUI
             this.PrizesLabel.AutoSize = true;
             this.PrizesLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PrizesLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.PrizesLabel.Location = new System.Drawing.Point(483, 328);
+            this.PrizesLabel.Location = new System.Drawing.Point(436, 354);
             this.PrizesLabel.Name = "PrizesLabel";
             this.PrizesLabel.Size = new System.Drawing.Size(69, 30);
             this.PrizesLabel.TabIndex = 22;
@@ -233,11 +238,12 @@ namespace TrackerUI
             // prizeListBox
             // 
             this.prizeListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.prizeListBox.Font = new System.Drawing.Font("Segoe UI", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prizeListBox.FormattingEnabled = true;
-            this.prizeListBox.ItemHeight = 30;
-            this.prizeListBox.Location = new System.Drawing.Point(490, 387);
+            this.prizeListBox.ItemHeight = 31;
+            this.prizeListBox.Location = new System.Drawing.Point(441, 405);
             this.prizeListBox.Name = "prizeListBox";
-            this.prizeListBox.Size = new System.Drawing.Size(367, 212);
+            this.prizeListBox.Size = new System.Drawing.Size(367, 188);
             this.prizeListBox.TabIndex = 21;
             this.prizeListBox.SelectedIndexChanged += new System.EventHandler(this.prizeListBox_SelectedIndexChanged);
             // 
@@ -250,7 +256,7 @@ namespace TrackerUI
             this.createTournamentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createTournamentButton.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createTournamentButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.createTournamentButton.Location = new System.Drawing.Point(444, 633);
+            this.createTournamentButton.Location = new System.Drawing.Point(351, 641);
             this.createTournamentButton.Name = "createTournamentButton";
             this.createTournamentButton.Size = new System.Drawing.Size(217, 58);
             this.createTournamentButton.TabIndex = 24;
@@ -263,7 +269,7 @@ namespace TrackerUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1158, 735);
+            this.ClientSize = new System.Drawing.Size(1020, 727);
             this.Controls.Add(this.createTournamentButton);
             this.Controls.Add(this.deleteSelectedPrizeButton);
             this.Controls.Add(this.PrizesLabel);

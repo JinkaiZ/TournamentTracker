@@ -344,5 +344,9 @@ namespace TrackerUI
 
         }
 
+        private void VSLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

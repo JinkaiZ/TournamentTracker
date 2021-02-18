@@ -180,5 +180,20 @@ namespace TrackerUI
             this.Close();
 
         }
+
+        private void tournamentNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void entryFeelabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selectTeamLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

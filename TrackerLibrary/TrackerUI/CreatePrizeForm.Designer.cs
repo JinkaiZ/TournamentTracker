@@ -45,11 +45,11 @@ namespace TrackerUI
             // createPrizeLabel
             // 
             this.createPrizeLabel.AutoSize = true;
-            this.createPrizeLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createPrizeLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createPrizeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.createPrizeLabel.Location = new System.Drawing.Point(44, 38);
             this.createPrizeLabel.Name = "createPrizeLabel";
-            this.createPrizeLabel.Size = new System.Drawing.Size(130, 30);
+            this.createPrizeLabel.Size = new System.Drawing.Size(190, 45);
             this.createPrizeLabel.TabIndex = 2;
             this.createPrizeLabel.Text = "Create Price";
             // 
@@ -162,7 +162,7 @@ namespace TrackerUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(614, 671);
+            this.ClientSize = new System.Drawing.Size(564, 631);
             this.Controls.Add(this.createPrizeButton);
             this.Controls.Add(this.or);
             this.Controls.Add(this.prizePercentageLabel);
